@@ -3,6 +3,6 @@ def sum(a, b):
 
 
 def test_add():
-    assert sum(argv[1],argv[2]) < 10
-#     assert sum(argv[1],argv[2) > 10, ("sum less than 10")
+    assert sum(2,3) < 10
+#     assert sum(5,7) > 10, ("sum less than 10")
    
