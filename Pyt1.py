@@ -3,8 +3,6 @@ def sum(a, b):
 
 
 def test_add():
-    if sum >10:
-        return "sum greater than 10"
-    else:
-        return sum
+    assert sum(3,4) < 10
+    assert sum(3,4) > 10, ("sum less than 10")
     
