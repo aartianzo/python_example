@@ -1,7 +1,11 @@
 def sum(a, b):
-    return a + b
+    sum=a + b
 
 
 def test_add():
-    assert sum(2, 3) == 5
-    assert(sum>10),"greater than 10"
+    if sum >10:
+        return "sum less than 10"
+    else:
+        return sum
+    summed = sum(5,3)
+print(summed)
