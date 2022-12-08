@@ -7,5 +7,4 @@ def test_add():
         return "sum less than 10"
     else:
         return sum
-    summed = sum(5,3)
-print(summed)
+    
