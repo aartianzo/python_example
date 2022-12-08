@@ -33,6 +33,6 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
         
     - name: Test with pytest
-        github(argv[1]=3,argv[2]=3)
+        github(argv(3,3))
       run: |
         pytest Pyt1.py
