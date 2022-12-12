@@ -36,5 +36,5 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest -s --num1=3 test.py
-        pytest -s --num2=3 test.py
+        pytest  --num1=3 test.py
+        pytest  --num2=3 test.py
