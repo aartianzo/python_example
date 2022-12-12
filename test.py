@@ -1,3 +1,4 @@
+import pytest
 pytest.fixture
 def num1(request):
     return request.config.getoption('--num1')
