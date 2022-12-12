@@ -1,11 +1,12 @@
 import pytest
 
-def pytest_addoption(parser):
-    parser.addoption("--name", action="store")
 
-@pytest.fixture(scope='session')
-def name(request):
-    name_value = request.config.option.name
-    if name_value is None:
-        pytest.skip()
-    return name_value
+def pytest_addoption(parser):
+    parser.addoption(
+        "--cmdopt", action="store", default="type1", help="my option: type1 or type2"
+    )
+
+
+@pytest.fixture
+def cmdopt(request):
+    return request.config.getoption("--cmdopt")
