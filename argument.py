@@ -1,5 +1,4 @@
-import sys
-a = int(sys.argv[1])
-b = int(sys.argv[2])
-
-print(a+b)
+def test_params(params):
+    print(params)
+    assert params['num1'] == '3'
+    assert params['num2'] == '5'
