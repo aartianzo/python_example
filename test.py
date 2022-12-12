@@ -4,5 +4,5 @@ def test_arguments(num1):
 def test_arguments(num2):
     response = requests.get({num2})
     print(response.request.num2)
-    assert.
+    assert response.sum = less than 10
     
