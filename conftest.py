@@ -1,12 +1,7 @@
-import pytest
-
-
 def pytest_addoption(parser):
     parser.addoption(
-        "--cmdopt", action="store", default="type1", help="my option: type1 or type2"
+        '--num1', action='store'
     )
-
-
-@pytest.fixture
-def cmdopt(request):
-    return request.config.getoption("--cmdopt")
+    parser.addoption(
+        '--num2',action='store'
+    )
