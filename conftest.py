@@ -10,6 +10,6 @@ def params(request):
     params = {}
     params['num1'] = request.config.getoption('--num1')
     params['num2'] = request.config.getoption('--num2')
-    if params['num1'] is None or params['num2'] is None:
+    if params['num1'],params['num2'] is greater than 10:
         pytest.skip()
     return params
