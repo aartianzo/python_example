@@ -1,6 +1,11 @@
-def test_answer(cmdopt):
-    if cmdopt == "type1":
-        print("first")
-    elif cmdopt == "type2":
-        print("second")
-    assert 0  # to see what was printed
+import sys
+if len(sys.argv) > 2:
+    try:
+        a = int(sys.argv[1])
+        b = int(sys.argv[2])
+        print("sum = %d" % (a + b))
+    except ValueError:
+        print("failed to parse all arguments as integers.")
+        exit(1)
+else:
+    print("Not enough numbers to add")
