@@ -37,4 +37,5 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest  Update test.py
+        pytest  test.py 1 2
+        pytest  test.py 5 6
