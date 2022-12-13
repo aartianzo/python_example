@@ -7,6 +7,6 @@ def sum(a, b):
     return a + b
 
 def test_add():
-    assert sum(12, 3) > 10, ("sum less than 10")
+    assert sum(a, b) > 10, ("sum less than 10")
     assert sum(13, 4) == 17
     
