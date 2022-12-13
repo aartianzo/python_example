@@ -1,5 +1,10 @@
 import sys
 import pytest
+def pytest_addoption(parser):
+    parser.addoption(
+        "--a","--b",
+        action="store"
+    )
 
 a = sys.argv[1]
 b = sys.argv[2]
