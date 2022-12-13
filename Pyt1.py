@@ -7,7 +7,7 @@ def pytest_addoption(parser):
 
 # a = sys.argv[1]
 # b = sys.argv[2]
-@pytest.fixture
+
 @fixture()
 def sum(request):
     return request.config.getoptions("--a","--b")
