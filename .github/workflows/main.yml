@@ -36,5 +36,5 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest Pyt1.py --a 12 --b 3
+        pytest Pyt1.py --a 12 
         
