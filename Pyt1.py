@@ -1,4 +1,3 @@
-import sys
 import pytest
 def pytest_addoption(parser):
     parser.addoption(
@@ -6,9 +5,9 @@ def pytest_addoption(parser):
         action="store"
     )
 
-a = sys.argv[1]
-b = sys.argv[2]
-
+# a = sys.argv[1]
+# b = sys.argv[2]
+@pytest.fixture
 def sum(a, b):
     return a + b
 
