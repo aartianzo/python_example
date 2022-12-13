@@ -8,3 +8,5 @@ def sum(a, b):
 
 def test_add():
     assert sum(12, 3) > 10, ("sum less than 10")
+    assert sum(12,3)==15
+    
