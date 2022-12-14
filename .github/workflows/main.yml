@@ -36,5 +36,5 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest -q --num1=5 --num2=6 test_case/test1.py
+        pytest -q --num1=5 --num2=6 test_case1/test1.py
         
